@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Ввод данных — Перевод</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="screen">
+      <header class="hero">
+        <h1 style="color:var(--text);margin-top:12px">Создать перевод</h1>
+      </header>
+
+      <section style="padding:18px">
+        <form class="input-form">
+          <div>
+            <input id="name" placeholder="Имя получателя" required>
+            <input id="number" placeholder="Номер (без 996)" required>
+            <input id="price" type="number" placeholder="Сумма" required>
+            <input id="code-word" placeholder="Кодовое слово">
+            <button id="submit" type="button">Отправить</button>
+          </div>
+          <div id="price-error" style="display:none;color:#f55;margin-top:6px">Максимум 300 — введите кодовое слово для суммы выше</div>
+        </form>
+      </section>
+
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

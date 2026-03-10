@@ -1,0 +1,102 @@
+﻿<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Статус платежа</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="screen">
+      <!-- Страница отображения: данные приходят с `entry.html` через localStorage -->
+      <header class="hero">
+        <button class="back-btn" aria-label="Назад">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15 5 8 12l7 7" />
+          </svg>
+        </button>
+
+        <img
+          class="success-badge-image"
+          src="WhatsApp Image 2026-03-04 at 20.40.23.jpeg"
+          alt=""
+          aria-hidden="true"
+        />
+
+<br />
+        <p class="status-title">Транзакция успешно проведена</p>
+        <p class="amount">- 125,00 <span class="currency">C</span></p>
+        <p class="method">Перевод по номеру телефона</p>
+      </header>
+
+      <section class="sheet" aria-label="Детали транзакции">
+        <div class="grabber"></div>
+
+        <div class="sheet-head">
+          <h2>Детали транзакции</h2>
+          <button class="share-btn" aria-label="Поделиться">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v11" />
+              <path d="m8 7 4-4 4 4" />
+              <path d="M5 13v7h14v-7" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="details">
+          <div class="row">
+            <span class="key">Дата и время</span>
+            <span class="value">07.02.2023, 16:16</span>
+          </div>
+          <div class="row">
+            <span class="key">Номер квитанции</span>
+            <span class="value">P0207101658161</span>
+          </div>
+          <div class="row">
+            <span class="key">Оплачено со счета</span>
+            <span class="value">1032120267057681</span>
+          </div>
+          <div class="row">
+            <span class="key">Получатель</span>
+            <span class="value">Ака П.</span>
+          </div>
+          <div class="row">
+            <span class="key">Итого</span>
+            <span class="value">125,00 с</span>
+          </div>
+          <div class="row align-top">
+            <span class="key">Назначение платежа</span>
+            <span class="value multi">
+              Перевод по номеру 
+              <br />
+              телефона
+              <br />
+              996/ //
+              <br />
+              Сумма 125.00 KGS
+            </span>
+          </div>
+        </div>
+
+        <img
+          class="actions-image"
+          src="WhatsApp Image 2026-03-04 at 21.51.31.jpeg"
+          alt=""
+          aria-hidden="true"
+        />
+
+        <button class="cta">Назад</button>
+      </section>
+
+      <div class="home-indicator" aria-hidden="true"></div>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>
+
